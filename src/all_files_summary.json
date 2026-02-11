@@ -1,0 +1,22 @@
+{
+  "backend/main.mo": "Empty Motoko actor with no logic.",
+  "feature_evidence.json": "Feature evidence report describing a mascot image update affecting MissionSection.tsx.",
+  "frontend-file-summaries.txt": "Prewritten summaries of all frontend files for build documentation.",
+  "frontend/index.css": "Tailwind base styles defining OKLCH color variables and light/dark mode theme tokens.",
+  "frontend/index.html": "HTML entry point loading fonts, favicon, and bootstrapping the React app.",
+  "frontend/src/App.tsx": "Main React component composing navigation, sections, footer, and toaster.",
+  "frontend/src/components/zen/Footer.tsx": "Footer with logo, quick links, social links, and smooth-scroll behavior.",
+  "frontend/src/components/zen/HeaderNav.tsx": "Responsive header with scroll detection, navigation links, and mobile menu.",
+  "frontend/src/components/zen/HeroSection.tsx": "Hero section with headline, CTA buttons, stats, and background gradient.",
+  "frontend/src/components/zen/MissionSection.tsx": "Mission section featuring mission text, uploaded mascot image, and four feature cards.",
+  "frontend/src/components/zen/RoadmapSection.tsx": "Displays project roadmap phases using cards and a grid layout with titles and bullet items.",
+  "frontend/src/components/zen/TokenSection.tsx": "Shows the ZEN token contract address with copy functionality and basic token metadata and links.",
+  "frontend/src/hooks/useActor.ts": "Creates and manages a backend actor based on the current Internet Identity, refreshing queries when identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides context and helpers for Internet Identity login, state handling, and identity persistence.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file indicating no backend queries are needed for the marketing site.",
+  "frontend/src/index.css": "Defines Tailwind base styles, theme variables, dark mode colors, and global utility classes.",
+  "frontend/src/lib/assetPath.ts": "Builds base-aware asset URLs to ensure correct loading when deployed under subpaths.",
+  "frontend/src/main.tsx": "Initializes React app with QueryClient and InternetIdentityProvider, rendering the root component.",
+  "frontend/tailwind.config.js": "Configures Tailwind theme, colors, plugins, and extended utilities based on CSS variables.",
+  "project_state.json": "Defines the project's state, features, known issues, and versioning for the ZEN website. Notes deployment failures and tracks existing feature requirements and visual/structure guidelines."
+}

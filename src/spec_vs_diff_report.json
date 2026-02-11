@@ -1,0 +1,24 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-11T23:33:58.378Z",
+  "summary": "REQ-11 is partially implemented: the MissionSection mascot <img> now uses assetPath('assets/generated/image-1.webp'), but the diff does not add the required uploaded .webp asset file under frontend/public/assets/generated.",
+  "missing_requirements": [
+    {
+      "id": "REQ-11",
+      "requirement": "Add the uploaded image file(s) to frontend/public/assets/generated/<filename>.webp so the updated Mission mascot <img> src resolves correctly.",
+      "reason": "The diff shows no new files added, so there is no evidence that assets/generated/image-1.webp (or image-2.webp) was added to frontend/public/assets/generated as required.",
+      "evidence": [
+        "File diff summary: ADDED FILES: none",
+        "frontend/src/components/zen/MissionSection.tsx (references assetPath('assets/generated/image-1.webp'))"
+      ]
+    }
+  ],
+  "hallucinated_features": [],
+  "confidence": 0.7,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/components/zen/MissionSection.tsx",
+    "project_state.json"
+  ]
+}

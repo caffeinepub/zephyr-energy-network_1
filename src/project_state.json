@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 11,
+  "summary": "Website project for Zephyr Energy Network (ZEN), a fictional blockchain-based peer-to-peer renewable energy trading concept with a plush mascot brand.",
+  "architectural_notes": [],
+  "known_issues": [
+    "Deployed site issue: pages are not downloading/loading for the user.",
+    "Build/deploy pipeline encountered an internal configuration error (\"Please contact the Caffeine team\"), preventing deployment retries."
+  ],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-create-a-responsive-zephyr-energy-network-zen-website-as-a-public-facing-marketing-site-with-clear-navigation-and-sections-for-1-project-overview-mission-2-how-it-works-peer-to-peer-solar-wind-energy-trading-via-smart-contracts-concept-3-roadmap-and-4-token-information",
+      "title": "Create a responsive Zephyr Energy Network (ZEN) website as a public-facing marketing site with clear navigation and sections for: (1) project overview/mission, (2) how it works (peer-to-peer solar/wind energy trading via smart contracts concept), (3) roadmap, and (4) token information.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-token-section-that-prominently-displays-the-zen-contract-address-exactly-as-provided-bjhgkb2hqnhqr1skfagnfd1u3mebggpbdjh8a3a8pump-and-include-a-one-click-copy-to-clipboard-interaction-with-visible-success-feedback",
+      "title": "Add a Token section that prominently displays the ZEN contract address exactly as provided: \"BJHgkB2HqNHqr1SKFAgnFd1U3MEBGgpbdjH8A3a8pump\", and include a one-click copy-to-clipboard interaction with visible success feedback.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-roadmap-section-that-renders-the-roadmap-phases-in-a-clean-timeline-list-format-using-the-phases-described-in-the-conversation-concept-community-prototype-development-alpha-network-beta-network-public-launch-expansion",
+      "title": "Add a Roadmap section that renders the roadmap phases in a clean timeline/list format using the phases described in the conversation (Concept & Community, Prototype Development, Alpha Network, Beta Network, Public Launch, Expansion).",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-establish-and-apply-a-cohesive-visual-theme-for-the-zen-brand-across-the-site-colors-typography-spacing-component-styling-inspired-by-a-clean-eco-tech-aesthetic-with-warm-accents-avoid-blue-purple-as-primary-colors",
+      "title": "Establish and apply a cohesive visual theme for the ZEN brand across the site (colors, typography, spacing, component styling) inspired by a clean eco-tech aesthetic with warm accents (avoid blue/purple as primary colors).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-generated-brand-imagery-as-static-assets-and-use-them-in-the-ui-place-images-under-frontend-public-assets-generated-and-reference-them-directly-from-the-frontend-no-backend-image-serving",
+      "title": "Add generated brand imagery as static assets and use them in the UI: place images under frontend/public/assets/generated and reference them directly from the frontend (no backend image serving).",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-existing-x-twitter-social-link-in-the-site-footer-so-it-points-to-https-x-com-i-communities-2020297371301626192-instead-of-the-generic-https-x-com",
+      "title": "Update the existing X (Twitter) social link in the site footer so it points to https://x.com/i/communities/2020297371301626192 (instead of the generic https://x.com).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-marketing-site-ui-to-display-the-uploaded-images-use-zenbanner-webp-as-the-primary-hero-image-in-the-hero-section-and-add-image-webp-as-an-additional-mascot-photo-visual-in-a-sensible-location-on-the-page-e-g-within-or-adjacent-to-the-mission-section-while-keeping-the-layout-responsive-for-mobile-and-desktop",
+      "title": "Update the marketing site UI to display the uploaded images: use zenbanner.webp as the primary hero image in the Hero section, and add image.webp as an additional mascot/photo visual in a sensible location on the page (e.g., within or adjacent to the Mission section) while keeping the layout responsive for mobile and desktop.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-investigate-and-fix-the-deployment-issue-where-the-zen-website-does-not-load-pages-are-not-downloading-ensuring-the-initial-html-and-bundled-js-css-assets-download-successfully-in-the-internet-computer-hosting-environment",
+      "title": "Investigate and fix the deployment issue where the ZEN website does not load (\"pages are not downloading\"), ensuring the initial HTML and bundled JS/CSS assets download successfully in the Internet Computer hosting environment.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-make-all-frontend-asset-references-resilient-to-non-root-hosting-paths-by-removing-hard-coded-absolute-urls-leading-for-critical-resources-e-g-the-main-module-script-and-static-images-and-using-a-base-aware-approach-so-the-app-works-whether-served-from-or-a-subpath",
+      "title": "Make all frontend asset references resilient to non-root hosting paths by removing hard-coded absolute URLs (leading '/') for critical resources (e.g., the main module script and static images) and using a base-aware approach so the app works whether served from '/' or a subpath.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-selected-mission-section-mascot-img-element-xpath-html-1-body-1-div-1-div-1-main-1-section-1-div-2-div-1-div-2-img-1-so-it-uses-the-user-uploaded-photo-instead-of-the-current-generated-mascot-image-add-the-uploaded-image-file-s-to-frontend-public-assets-generated-and-update-only-this-image-element-s-src-to-reference-the-uploaded-asset-via-the-existing-base-aware-assetpath-helper",
+      "title": "Update the selected Mission Section mascot <img> element (XPath: /html[1]/body[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/img[1]) so it uses the user-uploaded photo instead of the current generated mascot image. Add the uploaded image file(s) to frontend/public/assets/generated and update only this image element’s src to reference the uploaded asset via the existing base-aware assetPath() helper.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a website for Zephyr Energy Network (ZEN) including project overview, roadmap, and token info (contract address provided).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add an X (Twitter) link pointing to https://x.com/i/communities/2020297371301626192.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Add the requested photos to the website (include them as static assets and display them in the UI).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Add the two user-uploaded images (image.webp and zenbanner.webp) to the frontend as static assets under frontend/public/assets/generated and ensure they are accessible via the paths /assets/generated/image.webp and /assets/generated/zenbanner.webp.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Zephyr Energy Network",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

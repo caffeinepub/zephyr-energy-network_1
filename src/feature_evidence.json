@@ -1,0 +1,23 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-selected-mission-section-mascot-img-element-xpath-html-1-body-1-div-1-div-1-main-1-section-1-div-2-div-1-div-2-img-1-so-it-uses-the-user-uploaded-photo-instead-of-the-current-generated-mascot-image-add-the-uploaded-image-file-s-to-frontend-public-assets-generated-and-update-only-this-image-element-s-src-to-reference-the-uploaded-asset-via-the-existing-base-aware-assetpath-helper",
+      "featureTitle": "Update the selected Mission Section mascot <img> element (XPath: /html[1]/body[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/img[1]) so it uses the user-uploaded photo instead of the current generated mascot image. Add the uploaded image file(s) to frontend/public/assets/generated and update only this image element’s src to reference the uploaded asset via the existing base-aware assetPath() helper.",
+      "files": [
+        "frontend/src/components/zen/MissionSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-11"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

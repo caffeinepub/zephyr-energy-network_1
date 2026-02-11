@@ -1,0 +1,15 @@
+{
+  "frontend/src/App.tsx": "Main application component that composes the complete marketing website layout with header navigation, hero section, mission section, roadmap, token info, footer, and toast notifications.",
+  "frontend/src/components/zen/HeaderNav.tsx": "Responsive header navigation with logo using base-aware asset helper, smooth scroll navigation, mobile menu toggle, and scroll-based styling.",
+  "frontend/src/components/zen/HeroSection.tsx": "Hero section with base-aware hero illustration asset, headline, description, CTA buttons, and energy source stats with icons.",
+  "frontend/src/components/zen/MissionSection.tsx": "Mission section displaying mascot using base-aware asset helper (now pointing to uploaded image-1.webp), mission statement, and four feature cards with icons and descriptions.",
+  "frontend/src/components/zen/RoadmapSection.tsx": "Roadmap section rendering all six development phases in a responsive card grid with numbered badges and checkmark bullet points.",
+  "frontend/src/components/zen/TokenSection.tsx": "Token information section displaying the exact Solana contract address with copy-to-clipboard functionality, token stats, and external link to Pump.fun.",
+  "frontend/src/components/zen/Footer.tsx": "Footer component with base-aware logo asset, quick navigation links, social media icons, copyright notice, and Caffeine.ai attribution with UTM tracking.",
+  "frontend/src/index.css": "Global styles defining the eco-tech color system using OKLCH values with fresh green primary, warm coral accents, and comprehensive light/dark mode support.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the theme with Inter font family and mapping OKLCH color tokens for consistent design system usage.",
+  "frontend/index.html": "HTML entry point with relative paths for favicon and main script to support IC subpath hosting, includes Inter font preload and meta tags.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file as the marketing website uses only static content without backend queries.",
+  "frontend/src/lib/assetPath.ts": "Helper utility that builds base-aware asset URLs using import.meta.env.BASE_URL for Internet Computer subpath deployment compatibility.",
+  "frontend/src/main.tsx": "Application entry point with minimal dev-mode startup logging to verify base path and bootstrap execution."
+}
