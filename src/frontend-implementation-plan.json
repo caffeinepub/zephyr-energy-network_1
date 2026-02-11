@@ -1,31 +1,26 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Swap Mission mascot image to uploaded asset",
+  "title": "Swap MissionSection mascot image to plrbidozqqfdsyqmaxw2.webp",
   "requirements": [
     {
-      "id": "REQ-11",
-      "summary": "Replace the Mission section mascot image src to use the uploaded .webp asset via the existing base-aware assetPath() helper, without changing layout or other images.",
+      "id": "REQ-12",
+      "summary": "Update only the MissionSection mascot <img> src to use the uploaded plrbidozqqfdsyqmaxw2.webp via assetPath(), and add the image under public generated assets.",
       "acceptanceCriteria": [
-        "The mascot image currently using assetPath('assets/generated/zen-mascot-logo.dim_512x512.png') is replaced to use assetPath('assets/generated/image-1.webp') (or assetPath('assets/generated/image-2.webp') if that is the intended replacement), without changing surrounding layout or other sections.",
-        "The uploaded image file used by the <img> exists at frontend/public/assets/generated/<filename>.webp and loads correctly in both local dev and IC deployments served from a subpath (i.e., no hard-coded leading '/' in the src).",
-        "Only the selected <img> element in the Mission section is changed (no other images on the page are modified)."
+        "plrbidozqqfdsyqmaxw2.webp exists at frontend/public/assets/generated/plrbidozqqfdsyqmaxw2.webp and is served at /assets/generated/plrbidozqqfdsyqmaxw2.webp (base-path aware).",
+        "Only the MissionSection mascot <img> element’s src is changed; alt text, classes, surrounding markup, and all other page elements remain unchanged.",
+        "The updated image loads correctly when the app is hosted under both '/' and a non-root subpath (using assetPath())."
       ],
       "file_operations": [
         {
-          "path": "frontend/public/assets/generated/image-1.webp",
+          "path": "frontend/public/assets/generated/plrbidozqqfdsyqmaxw2.webp",
           "operation": "create",
-          "description": "Add the user-uploaded mascot replacement image to the generated assets directory so it can be referenced via assetPath('assets/generated/image-1.webp') and loaded base-aware in all deployments."
-        },
-        {
-          "path": "frontend/public/assets/generated/image-2.webp",
-          "operation": "create",
-          "description": "Add the alternate user-uploaded mascot replacement image (if provided/needed) to the generated assets directory to allow switching to assetPath('assets/generated/image-2.webp') without introducing hard-coded paths."
+          "description": "Add the newly uploaded image asset so it can be served as a static file at a base-path-aware URL."
         },
         {
           "path": "frontend/src/components/zen/MissionSection.tsx",
           "operation": "modify",
-          "description": "Update only the Mission section mascot <img> element’s src to reference the uploaded asset using assetPath('assets/generated/image-1.webp') (or image-2.webp if that is the intended replacement), leaving all other markup, classes, layout, and images unchanged."
+          "description": "Change ONLY the mascot <img> element (the one corresponding to XPath /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[1]/img[1]) src from assetPath('assets/generated/image-1.webp') to assetPath('assets/generated/plrbidozqqfdsyqmaxw2.webp'), leaving alt text, className, and all surrounding markup unchanged."
         }
       ]
     }

@@ -1,7 +1,7 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-11T23:33:58.381Z",
+  "generatedAt": "2026-02-11T23:40:44.314Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
@@ -11,12 +11,11 @@
     "implemented": 1,
     "items": [
       {
-        "id": "REQ-11",
-        "summary": "Update the selected Mission Section mascot <img> element (XPath: /html[1]/body[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/img[1]) so it uses the user-uploaded photo instead of the current generated mascot image. Add the uploaded image file(s) to frontend/public/assets/generated and update only this image element’s src to reference the uploaded asset via the existing base-aware assetPath() helper.",
+        "id": "REQ-12",
+        "summary": "Update ONLY the selected <img> element at XPath /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[1]/img[1] (the MissionSection mascot image) so its src uses the newly uploaded image file plrbidozqqfdsyqmaxw2.webp. Add plrbidozqqfdsyqmaxw2.webp under frontend/public/assets/generated and set the <img> src via the existing base-aware assetPath() helper (e.g., assetPath('assets/generated/plrbidozqqfdsyqmaxw2.webp')). Do not modify any other elements, styling, layout, text, or images.",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/public/assets/generated/image-1.webp",
-          "frontend/public/assets/generated/image-2.webp",
+          "frontend/public/assets/generated/plrbidozqqfdsyqmaxw2.webp",
           "frontend/src/components/zen/MissionSection.tsx"
         ],
         "matchedFiles": [

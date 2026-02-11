@@ -2,7 +2,7 @@
   "frontend/src/App.tsx": "Main application component that composes the complete marketing website layout with header navigation, hero section, mission section, roadmap, token info, footer, and toast notifications.",
   "frontend/src/components/zen/HeaderNav.tsx": "Responsive header navigation with logo using base-aware asset helper, smooth scroll navigation, mobile menu toggle, and scroll-based styling.",
   "frontend/src/components/zen/HeroSection.tsx": "Hero section with base-aware hero illustration asset, headline, description, CTA buttons, and energy source stats with icons.",
-  "frontend/src/components/zen/MissionSection.tsx": "Mission section displaying mascot using base-aware asset helper (now pointing to uploaded image-1.webp), mission statement, and four feature cards with icons and descriptions.",
+  "frontend/src/components/zen/MissionSection.tsx": "Mission section displaying mascot using base-aware asset helper (now pointing to uploaded plrbidozqqfdsyqmaxw2.webp), mission statement, and four feature cards with icons and descriptions.",
   "frontend/src/components/zen/RoadmapSection.tsx": "Roadmap section rendering all six development phases in a responsive card grid with numbered badges and checkmark bullet points.",
   "frontend/src/components/zen/TokenSection.tsx": "Token information section displaying the exact Solana contract address with copy-to-clipboard functionality, token stats, and external link to Pump.fun.",
   "frontend/src/components/zen/Footer.tsx": "Footer component with base-aware logo asset, quick navigation links, social media icons, copyright notice, and Caffeine.ai attribution with UTM tracking.",

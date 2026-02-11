@@ -1,21 +1,36 @@
 {
   "kind": "spec_vs_diff_report",
   "version": "1.0",
-  "generatedAt": "2026-02-11T23:33:58.378Z",
-  "summary": "REQ-11 is partially implemented: the MissionSection mascot <img> now uses assetPath('assets/generated/image-1.webp'), but the diff does not add the required uploaded .webp asset file under frontend/public/assets/generated.",
+  "generatedAt": "2026-02-11T23:40:44.311Z",
+  "summary": "The MissionSection mascot <img> src was updated to use assetPath('assets/generated/plrbidozqqfdsyqmaxw2.webp'), but the uploaded image file itself was not added. Additional non-requested documentation/state files were also modified.",
   "missing_requirements": [
     {
-      "id": "REQ-11",
-      "requirement": "Add the uploaded image file(s) to frontend/public/assets/generated/<filename>.webp so the updated Mission mascot <img> src resolves correctly.",
-      "reason": "The diff shows no new files added, so there is no evidence that assets/generated/image-1.webp (or image-2.webp) was added to frontend/public/assets/generated as required.",
+      "id": "REQ-12",
+      "requirement": "Add plrbidozqqfdsyqmaxw2.webp under frontend/public/assets/generated so it is served at /assets/generated/plrbidozqqfdsyqmaxw2.webp (base-path aware).",
+      "reason": "Diff shows no added files; only code was modified to reference the new filename.",
       "evidence": [
-        "File diff summary: ADDED FILES: none",
-        "frontend/src/components/zen/MissionSection.tsx (references assetPath('assets/generated/image-1.webp'))"
+        "File diff summary: \"Added: 0\"",
+        "frontend/src/components/zen/MissionSection.tsx (references assets/generated/plrbidozqqfdsyqmaxw2.webp)"
       ]
     }
   ],
-  "hallucinated_features": [],
-  "confidence": 0.7,
+  "hallucinated_features": [
+    {
+      "description": "Updated frontend-file-summaries.txt contents to mention the new mascot image reference.",
+      "reason": "BuildRequest only asked to swap the selected MissionSection <img> src and add the asset file; it did not request updates to summary/documentation files.",
+      "evidence": [
+        "frontend-file-summaries.txt"
+      ]
+    },
+    {
+      "description": "Modified project_state.json project metadata/state.",
+      "reason": "BuildRequest did not request any changes to project state tracking files.",
+      "evidence": [
+        "project_state.json"
+      ]
+    }
+  ],
+  "confidence": 0.74,
   "changed_files": [
     "frontend-file-summaries.txt",
     "frontend/src/components/zen/MissionSection.tsx",

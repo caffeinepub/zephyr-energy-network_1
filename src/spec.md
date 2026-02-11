@@ -1,11 +1,11 @@
 # Specification
 
 ## Summary
-**Goal:** Replace the Mission section mascot image with the user-uploaded photo while keeping asset paths base-aware.
+**Goal:** Swap the Mission section mascot image to use the newly uploaded `plrbidozqqfdsyqmaxw2.webp` asset.
 
 **Planned changes:**
-- Add the uploaded .webp image(s) to `frontend/public/assets/generated/`.
-- Update only the specified Mission section `<img>` element to use `assetPath('assets/generated/image-1.webp')` (or `image-2.webp` if that is the intended replacement) instead of `assetPath('assets/generated/zen-mascot-logo.dim_512x512.png')`.
-- Keep the surrounding layout and all other images/sections unchanged.
+- Add `plrbidozqqfdsyqmaxw2.webp` to `frontend/public/assets/generated/`.
+- Update ONLY the MissionSection mascot `<img>` at XPath `/html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[1]/img[1]` so its `src` uses the existing base-aware `assetPath('assets/generated/plrbidozqqfdsyqmaxw2.webp')` helper.
+- Leave all other markup, styling, text, and images unchanged.
 
-**User-visible outcome:** The Mission section displays the uploaded mascot photo instead of the current generated mascot image, and it loads correctly in both local development and subpath deployments.
+**User-visible outcome:** The Mission section displays the new uploaded mascot image, and it loads correctly both at `/` and when the app is hosted under a non-root subpath.

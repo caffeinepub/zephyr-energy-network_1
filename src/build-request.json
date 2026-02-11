@@ -1,34 +1,34 @@
 {
   "kind": "build_request",
-  "title": "Replace Mission mascot image with uploaded photo",
+  "title": "Swap selected Mission section image to uploaded plrbidozqqfdsyqmaxw2.webp",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-11",
-      "text": "Update the selected Mission Section mascot <img> element (XPath: /html[1]/body[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/img[1]) so it uses the user-uploaded photo instead of the current generated mascot image. Add the uploaded image file(s) to frontend/public/assets/generated and update only this image element’s src to reference the uploaded asset via the existing base-aware assetPath() helper.",
+      "id": "REQ-12",
+      "text": "Update ONLY the selected <img> element at XPath /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[1]/img[1] (the MissionSection mascot image) so its src uses the newly uploaded image file plrbidozqqfdsyqmaxw2.webp. Add plrbidozqqfdsyqmaxw2.webp under frontend/public/assets/generated and set the <img> src via the existing base-aware assetPath() helper (e.g., assetPath('assets/generated/plrbidozqqfdsyqmaxw2.webp')). Do not modify any other elements, styling, layout, text, or images.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "recent-1"
+          "msg-1"
         ],
         "quotes": [
-          "change to which I sent"
+          "change only this part"
         ]
       },
       "acceptanceCriteria": [
-        "The mascot image currently using assetPath('assets/generated/zen-mascot-logo.dim_512x512.png') is replaced to use assetPath('assets/generated/image-1.webp') (or assetPath('assets/generated/image-2.webp') if that is the intended replacement), without changing surrounding layout or other sections.",
-        "The uploaded image file used by the <img> exists at frontend/public/assets/generated/<filename>.webp and loads correctly in both local dev and IC deployments served from a subpath (i.e., no hard-coded leading '/' in the src).",
-        "Only the selected <img> element in the Mission section is changed (no other images on the page are modified)."
+        "plrbidozqqfdsyqmaxw2.webp exists at frontend/public/assets/generated/plrbidozqqfdsyqmaxw2.webp and is served at /assets/generated/plrbidozqqfdsyqmaxw2.webp (base-path aware).",
+        "Only the MissionSection mascot <img> element’s src is changed; alt text, classes, surrounding markup, and all other page elements remain unchanged.",
+        "The updated image loads correctly when the app is hosted under both '/' and a non-root subpath (using assetPath())."
       ]
     }
   ],
   "constraints": [
-    "Do not edit files under frontend/src/components/ui or any paths listed as immutable in SYSTEM_CONTEXT.",
-    "Keep asset URLs base-aware (use assetPath) so the site works when hosted from '/' or a subpath."
+    "Apply changes ONLY to the selected element at XPath /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[1]/img[1].",
+    "Do not modify any files listed as immutable in SYSTEM_CONTEXT."
   ],
   "nonGoals": [
-    "Reworking page layout, typography, colors, or other sections beyond swapping the selected Mission mascot image.",
-    "Adding backend logic or storage for images."
+    "Do not change any other images (including hero banner) or any other sections.",
+    "Do not add backend logic or modify Motoko canisters."
   ],
   "imageRequirements": {
     "required": [],

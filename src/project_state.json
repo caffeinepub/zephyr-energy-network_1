@@ -1,8 +1,10 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 11,
+  "projectStateVersion": 13,
   "summary": "Website project for Zephyr Energy Network (ZEN), a fictional blockchain-based peer-to-peer renewable energy trading concept with a plush mascot brand.",
-  "architectural_notes": [],
+  "architectural_notes": [
+    "User request: make changes only to the specified part/section (minimize scope; avoid unrelated modifications)."
+  ],
   "known_issues": [
     "Deployed site issue: pages are not downloading/loading for the user.",
     "Build/deploy pipeline encountered an internal configuration error (\"Please contact the Caffeine team\"), preventing deployment retries."
@@ -86,6 +88,14 @@
       "title": "Update the selected Mission Section mascot <img> element (XPath: /html[1]/body[1]/div[1]/div[1]/main[1]/section[1]/div[2]/div[1]/div[2]/img[1]) so it uses the user-uploaded photo instead of the current generated mascot image. Add the uploaded image file(s) to frontend/public/assets/generated and update only this image element’s src to reference the uploaded asset via the existing base-aware assetPath() helper.",
       "reqIds": [
         "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-only-the-selected-img-element-at-xpath-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-1-img-1-the-missionsection-mascot-image-so-its-src-uses-the-newly-uploaded-image-file-plrbidozqqfdsyqmaxw2-webp-add-plrbidozqqfdsyqmaxw2-webp-under-frontend-public-assets-generated-and-set-the-img-src-via-the-existing-base-aware-assetpath-helper-e-g-assetpath-assets-generated-plrbidozqqfdsyqmaxw2-webp-do-not-modify-any-other-elements-styling-layout-text-or-images",
+      "title": "Update ONLY the selected <img> element at XPath /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[1]/img[1] (the MissionSection mascot image) so its src uses the newly uploaded image file plrbidozqqfdsyqmaxw2.webp. Add plrbidozqqfdsyqmaxw2.webp under frontend/public/assets/generated and set the <img> src via the existing base-aware assetPath() helper (e.g., assetPath('assets/generated/plrbidozqqfdsyqmaxw2.webp')). Do not modify any other elements, styling, layout, text, or images.",
+      "reqIds": [
+        "REQ-12"
       ],
       "version": 1
     }
